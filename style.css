@@ -1,0 +1,257 @@
+:root {
+  --primary: hsl(249, 99%, 64%);
+  --secondary: hsl(278, 94%, 30%);
+  --tertiary: hsl(0, 100%, 66%);
+  --white: hsl(0, 0%, 100%);
+  --light-graiyish-violet: hsl(270, 3%, 87%);
+  --dark-graiyish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-Medium.ttf");
+  font-weight: 500;
+}
+
+/* ELEMENTS */
+body {
+  margin: 0;
+  min-width: 317px;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+span,
+label {
+  font-size: 0.9rem;
+}
+
+a,
+p,
+span,
+label,
+input {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+input {
+  font-size: 1.125rem;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0 1rem 0;
+  border: solid 1px;
+  border-color: var(--light-graiyish-violet);
+  border-radius: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.2s ease-in-out;
+}
+input::placeholder {
+  color: var(--light-graiyish-violet);
+}
+input:focus {
+  outline: none !important;
+  border-color: var(--primary);
+}
+
+form {
+  z-index: 1;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+form label {
+  text-transform: uppercase;
+  color: var(--very-dark-violet);
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+.mx-1 {
+  margin: 0 0.5rem;
+}
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.col {
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+/* BUTTON */
+.btn {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease-in-out;
+}
+.btn:active {
+  background-color: var(--secondary);
+}
+.btn-dark {
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+}
+
+/* CARDS */
+.cards {
+  position: relative;
+  background-image: url("./images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 224px;
+  margin-bottom: 4.5rem;
+  text-transform: uppercase;
+}
+
+.card-logo {
+  margin-bottom: 2rem;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 181px;
+  width: 383px;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  transform: scale(0.65);
+  margin: -2.5rem -4.75rem;
+}
+
+.card-front {
+  z-index: 1;
+  background-image: url("./images/bg-card-front.png");
+  top: 50%;
+  left: 3.5%;
+}
+
+.card-front > div {
+  margin: 1.5rem 0;
+}
+
+.card-number {
+  font-size: 1.7rem;
+  letter-spacing: 0.25rem;
+  color: var(--white);
+}
+
+.card-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-name,
+.card-date {
+  color: var(--light-graiyish-violet);
+}
+
+.card-cvc {
+  color: var(--white);
+}
+
+.card-back {
+  background-image: url("./images/bg-card-back.png");
+  top: 10%;
+  right: 3.5%;
+}
+
+.card-back .card-cvc {
+  position: absolute;
+  top: 45%;
+  right: 14%;
+}
+
+@media (min-width: 1085px) {
+  main {
+    flex-direction: row;
+  }
+
+  .cards {
+    background-image: url("./images/bg-main-desktop.png");
+    height: 100vh;
+    flex-grow: 4;
+    flex-basis: 250px;
+    margin-bottom: 0;
+    margin-right: 12rem;
+  }
+
+  .form-container {
+    /* background-color: grey; */
+    flex-grow: 3;
+    flex-basis: 650px;
+  }
+
+  a,
+  p,
+  span,
+  label,
+  input {
+    font-size: 1.125rem;
+  }
+
+  .card-front,
+  .card-back {
+    transform: scale(1);
+    margin: 0;
+  }
+
+  .card-front {
+    top: 20%;
+    left: 30%;
+  }
+
+  .card-back {
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@media (min-width: 1085px) and (max-width: 1200px) {
+  .form-container {
+    justify-content: end;
+  }
+}
+
+/* ATTRIBUTION */
+.attribution {
+  font-family: Montserrat, sans-serif;
+  background-color: var(--light-graiyish-violet);
+  text-align: center;
+}
+
+/* MISC  */
+::selection {
+  background-color: var(--primary);
+  color: var(--white);
+}
