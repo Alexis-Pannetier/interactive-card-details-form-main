@@ -32,7 +32,7 @@ main {
 p,
 span,
 label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 h1 {
@@ -66,7 +66,7 @@ input {
 }
 
 .my-1 {
-  margin: 0.75rem 0;
+  margin: 0.6rem 0;
 }
 
 .row {
@@ -156,6 +156,7 @@ form label {
   font-size: 1rem;
   text-align: center;
   padding: 1rem 2rem;
+  margin: 1rem 0;
   box-sizing: border-box;
   border-radius: 0.5rem;
   transition: background 0.2s ease-in-out;
@@ -176,7 +177,7 @@ form label {
   background-position: center;
   background-size: cover;
   height: 224px;
-  margin-bottom: 4.5rem;
+  margin-bottom: 5rem;
   text-transform: uppercase;
 }
 
@@ -251,6 +252,14 @@ form label {
     font-size: 2rem;
   }
 
+  .my-1 {
+    margin: 0.8rem 0;
+  }
+
+  .btn {
+    margin: 1rem 0;
+  }
+
   .cards {
     background-image: url("./images/bg-main-desktop.png");
     height: 100vh;
@@ -269,9 +278,12 @@ form label {
   a,
   p,
   span,
-  label,
   input {
     font-size: 1.125rem;
+  }
+
+  label {
+    font-size: 1rem;
   }
 
   .card-front,
