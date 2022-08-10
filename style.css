@@ -6,6 +6,7 @@
   --light-graiyish-violet: hsl(270, 3%, 87%);
   --dark-graiyish-violet: hsl(279, 6%, 55%);
   --very-dark-violet: hsl(278, 68%, 11%);
+  --very-dark-violet-shadow: hsla(278, 68%, 11%, 0.15);
 
   --max-width: 450px;
 }
@@ -195,6 +196,7 @@ form label {
   padding: 2rem;
   transform: scale(0.65);
   margin: -2.5rem -4.75rem;
+  box-shadow: 0 0 48px var(--very-dark-violet-shadow);
 }
 
 .card-front {
@@ -326,8 +328,13 @@ form label {
 /* ATTRIBUTION */
 .attribution {
   font-family: Montserrat, sans-serif;
-  background-color: var(--light-graiyish-violet);
+  background-color: var(--very-dark-violet);
+  padding: 0.5rem 0;
   text-align: center;
+}
+
+.attribution * {
+  color: var(--white);
 }
 
 /* MISC  */
