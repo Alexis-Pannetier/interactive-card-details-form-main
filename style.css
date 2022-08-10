@@ -151,9 +151,10 @@ form label {
 
 /* BUTTON */
 .btn {
+  text-decoration: none;
   width: 100%;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.125rem;
   text-align: center;
   padding: 1rem 2rem;
   margin: 1rem 0;
