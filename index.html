@@ -19,12 +19,12 @@
     <main>
       <div class="cards">
         <div class="card-front">
-          <img id="card-logo" src="./images/card-logo.svg" />
+          <img id="card-logo" src="./images/card-logo.svg" alt="card logo"/>
           <div>
             <span id="card-number">0000 0000 0000 0000</span>
           </div>
           <div class="card-line">
-            <span id="card-name" value="Jane Appleseed">Jane Appleseed</span>
+            <span id="card-name">Jane Appleseed</span>
             <span id="card-date"><span id="card-date-month">00</span>/<span id="card-date-year">00</span>
           </div>
         </div>
@@ -53,7 +53,6 @@
             name="number"
             id="number"
             placeholder="e.g. 1234 5678 9123 0000"
-            inputmode="decimal"
             maxlength="19"
             required
             onkeyup="handleNumber(this)"
@@ -71,7 +70,6 @@
                     id="date_month"
                     placeholder="MM"
                     type="number"
-                    inputmode ="decimal"
                     max="12"
                     required
                     onkeydown="return event.keyCode !== 69"
@@ -85,7 +83,6 @@
                     id="date_year"
                     placeholder="YY"
                     type="number"
-                    inputmode ="decimal"
                     max="99"
                     required
                     onkeydown="return event.keyCode !== 69"
@@ -102,7 +99,6 @@
                 id="cvc"
                 placeholder="e.g. 123"
                 type="number"
-                inputmode ="decimal"
                 max="999"
                 required
                 onkeydown="return event.keyCode !== 69"
@@ -112,7 +108,7 @@
             </div>
           </div>
 
-          <a class="btn btn-dark" type="submit" onclick="handleSubmit()">Confirm</a>
+          <a class="btn btn-dark" href="#" type="button" onclick="handleSubmit()">Confirm</a>
         </form>
 
         <!-- Completed state start -->
@@ -122,7 +118,7 @@
             <h1 class="text-center">Thank you!</h1>
             <p class="grey">We've added your card details</p>
           </div>
-          <a class="btn btn-dark" onclick="handleContinue()">Continue</a>
+          <a class="btn btn-dark" href="#" onclick="handleContinue()">Continue</a>
         </div>
 
       </div>
@@ -142,4 +138,4 @@
   </body>
 </html>
 
-<script type="text/javascript" src="index.js"></script>
+<script src="index.js"></script>
