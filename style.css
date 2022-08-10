@@ -98,7 +98,7 @@ input {
   transition: border 0.2s ease-in-out;
 }
 input::placeholder {
-  color: var(--light-graiyish-violet);
+  color: var(--dark-graiyish-violet);
 }
 input:focus {
   outline: none !important;
