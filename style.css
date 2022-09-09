@@ -29,6 +29,15 @@ main {
   flex-direction: column;
 }
 
+footer {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  float: none;
+  margin: auto;
+  width: 100%;
+}
+
 p,
 span,
 label {
@@ -340,14 +349,14 @@ form label {
 
 /* ATTRIBUTION */
 .attribution {
-  font-family: Montserrat, sans-serif;
-  background-color: var(--very-dark-violet);
-  padding: 0.5rem 0;
+  font-family: roboto;
+  font-size: 0.75rem;
   text-align: center;
+  color: var(--primary);
 }
 
-.attribution * {
-  color: var(--white);
+.attribution a {
+  color: var(--tertiary);
 }
 
 /* MISC  */

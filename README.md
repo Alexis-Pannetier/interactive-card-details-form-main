@@ -44,7 +44,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site : [Demonstration](https://interactive-card-details-form-main.netlify.app/)
+- Live Site URL : [Demonstration](https://pannetouch-interactive-card-details.netlify.app)
 
 ## My process
 
